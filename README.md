@@ -1,8 +1,9 @@
 # MG Workspace
 
-A separate, lightweight home page for three existing MG tools:
+A separate, lightweight home page with four entry cards for the existing MG tools:
 
-- Visa Calculator: tourism and immigration, hosted on Vercel.
+- Tourism: the visa file strength calculator at the Vercel site's root.
+- Immigration: the Canada and Australia calculators at the Vercel site's `/immigration` route.
 - Notes: the existing Mawid application, hosted on Cloudflare Workers. Its name on this launcher is Notes; the existing application and its data are unchanged.
 - Visa Review: the existing review application, hosted on Streamlit.
 
