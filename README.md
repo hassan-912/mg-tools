@@ -11,6 +11,8 @@ Each card is a normal HTTPS link that opens in a new tab. The launcher has no ru
 
 ## Local preview
 
+The launcher shares the Tourism/Immigration calculator's slate color tokens and Montserrat/Inter fonts. Latin variable fonts are bundled locally in `dist/fonts`, together with their SIL Open Font Licenses, so no remote font service is required.
+
 From this directory, serve `dist` with a static HTTP server, for example:
 
 ```powershell
