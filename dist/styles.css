@@ -50,12 +50,13 @@ h1 { max-width: 1100px; margin: 0 auto; font-size: clamp(30px, 3.35vw, 48px); li
 h1 span { display: inline-block; padding-bottom: 4px; color: var(--accent); border-bottom: 3px solid var(--accent); }
 .intro-copy { margin: 19px 0 0; color: var(--muted); font-size: 13px; letter-spacing: .15px; line-height: 1.7; }
 nav:focus { outline: none; }
-.tools { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.tools { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
 .tools li { min-width: 0; }
 .tool-card { position: relative; height: 305px; display: flex; align-items: center; flex-direction: column; padding: 24px 24px 20px; overflow: hidden; background: var(--color-surface); border: 1.5px solid var(--color-primary); border-radius: 16px; box-shadow: 0 2px 12px #00000006; transition: transform .25s, box-shadow .25s, border-color .25s; animation: arrive .6s ease-out both; }
 .tools li:nth-child(2) .tool-card { animation-delay: .05s; }
 .tools li:nth-child(3) .tool-card { animation-delay: .1s; }
 .tools li:nth-child(4) .tool-card { animation-delay: .15s; }
+.tools li:nth-child(5) .tool-card { animation-delay: .2s; }
 .tool-card::after { content: ""; position: absolute; left: 24px; right: 24px; bottom: -1px; height: 2px; background: var(--accent); opacity: 0; transition: opacity .25s; }
 .card-top { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-bottom: 22px; }
 .card-number { font-size: 10px; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -91,7 +92,7 @@ nav:focus { outline: none; }
 }
 @media (min-width: 851px) and (max-width: 1100px) {
   .workspace { padding-left: 28px; padding-right: 28px; }
-  .tools { gap: 14px; }
+  .tools { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
   .tool-card { padding-left: 17px; padding-right: 17px; height: 290px; }
   .tool-card h2 { font-size: 20px; }
   .tool-description { font-size: 10px; }
